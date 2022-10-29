@@ -1,0 +1,322 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mhinvest.Fragments.FotosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextNombreFotos"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="IPID o MH"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/buttonFotoexterior"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="35dp"
+                android:background="@mipmap/ic_camera_icon"
+                app:layout_constraintStart_toStartOf="@id/imageViewFotoexterior"
+                app:layout_constraintTop_toTopOf="@id/imageViewFotoexterior" />
+
+            <ImageButton
+                android:id="@+id/buttonFotopanoramica"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="35dp"
+                android:background="@mipmap/ic_camera_icon"
+                app:layout_constraintStart_toStartOf="@id/imageViewFotopanoramica"
+                app:layout_constraintTop_toTopOf="@id/imageViewFotopanoramica" />
+
+            <ImageButton
+                android:id="@+id/buttonFotoesquema"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="35dp"
+                android:background="@mipmap/ic_camera_icon"
+                app:layout_constraintStart_toStartOf="@id/imageViewFotoesquema"
+                app:layout_constraintTop_toTopOf="@id/imageViewFotoesquema" />
+
+            <ImageButton
+                android:id="@+id/buttonFototapa"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="35dp"
+                android:background="@mipmap/ic_camera_icon"
+                app:layout_constraintStart_toStartOf="@id/imageViewFototapa"
+                app:layout_constraintTop_toTopOf="@id/imageViewFototapa" />
+
+            <ImageButton
+                android:id="@+id/buttonFotointerior1"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="35dp"
+                android:background="@mipmap/ic_camera_icon"
+                app:layout_constraintStart_toStartOf="@id/imageViewFotointerior1"
+                app:layout_constraintTop_toTopOf="@id/imageViewFotointerior1" />
+
+            <ImageButton
+                android:id="@+id/buttonFotointerior2"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="35dp"
+                android:background="@mipmap/ic_camera_icon"
+                app:layout_constraintStart_toStartOf="@id/imageViewFotointerior2"
+                app:layout_constraintTop_toTopOf="@id/imageViewFotointerior2" />
+
+            <ImageButton
+                android:id="@+id/buttonFotointerior3"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="35dp"
+                android:background="@mipmap/ic_camera_icon"
+                app:layout_constraintStart_toStartOf="@id/imageViewFotointerior3"
+                app:layout_constraintTop_toTopOf="@id/imageViewFotointerior3" />
+
+            <ImageButton
+                android:id="@+id/buttonFotointerior4"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="35dp"
+                android:background="@mipmap/ic_camera_icon"
+                app:layout_constraintStart_toStartOf="@id/imageViewFotointerior4"
+                app:layout_constraintTop_toTopOf="@id/imageViewFotointerior4" />
+
+            <ImageView
+                android:id="@+id/imageViewFotoexterior"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/textViewFotoexterior"
+                app:layout_constraintTop_toBottomOf="@id/textViewFotoexterior" />
+
+            <ImageView
+                android:id="@+id/imageViewFotopanoramica"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/textViewFotoPanoramica"
+                app:layout_constraintTop_toBottomOf="@id/textViewFotoPanoramica" />
+
+            <ImageView
+                android:id="@+id/imageViewFotoesquema"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/textViewFotoesquema"
+                app:layout_constraintTop_toBottomOf="@id/textViewFotoesquema" />
+
+            <ImageView
+                android:id="@+id/imageViewFototapa"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/textViewFototapa"
+                app:layout_constraintTop_toBottomOf="@id/textViewFototapa" />
+
+            <ImageView
+                android:id="@+id/imageViewFotointerior1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/textViewFotointerior1"
+                app:layout_constraintTop_toBottomOf="@id/textViewFotointerior1" />
+
+            <ImageView
+                android:id="@+id/imageViewFotointerior2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/textViewFotointerior2"
+                app:layout_constraintTop_toBottomOf="@id/textViewFotointerior2" />
+
+            <ImageView
+                android:id="@+id/imageViewFotointerior3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/textViewFotointerior3"
+                app:layout_constraintTop_toBottomOf="@id/textViewFotointerior3" />
+
+            <ImageView
+                android:id="@+id/imageViewFotointerior4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/textViewFotointerior4"
+                app:layout_constraintTop_toBottomOf="@id/textViewFotointerior4" />
+
+            <TextView
+                android:id="@+id/textViewFotoexterior"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="120dp"
+                android:text="Foto exterior"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewFotoPanoramica"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="188dp"
+                android:text="Foto panoramica"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFotoexterior" />
+
+            <TextView
+                android:id="@+id/textViewFotoesquema"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="188dp"
+                android:text="Foto esquema de planta"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFotoPanoramica" />
+
+            <TextView
+                android:id="@+id/textViewFototapa"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="188dp"
+                android:text="Foto tapa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFotoesquema" />
+
+            <TextView
+                android:id="@+id/textViewFotointerior"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="188dp"
+                android:text="Fotos Interior camara"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFototapa" />
+
+            <TextView
+                android:id="@+id/textViewFotointerior1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="24dp"
+                android:text="Fotos Interior 1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFotointerior" />
+
+            <TextView
+                android:id="@+id/textViewFotointerior2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="188dp"
+                android:text="Fotos Interior 2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFotointerior1" />
+
+            <TextView
+                android:id="@+id/textViewFotointerior3"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="188dp"
+                android:text="Fotos Interior 3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFotointerior2" />
+
+            <TextView
+                android:id="@+id/textViewFotointerior4"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="188dp"
+                android:text="Fotos Interior 4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFotointerior3" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Nombre de las fotos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

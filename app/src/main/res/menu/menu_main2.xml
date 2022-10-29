@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.user.mhinvest.Main2Activity">
+    <item
+        android:id="@+id/action_guardar"
+        android:orderInCategory="1"
+        android:title="Guardar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_actualizar"
+        android:orderInCategory="2"
+        android:title="Actualizar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_cargardatos"
+        android:orderInCategory="3"
+        android:title="Cargar datos"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_salir"
+        android:orderInCategory="4"
+        android:title="Salir"
+        app:showAsAction="never" />
+</menu>

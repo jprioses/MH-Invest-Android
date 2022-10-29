@@ -1,0 +1,741 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mhinvest.Fragments.ElementosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textViewElementos"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Elemento"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="24dp" />
+
+    <TextView
+        android:id="@+id/textViewTapa"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/color_texto_activo"
+        android:text="Tapa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewElementos" />
+
+    <TextView
+        android:id="@+id/textViewCuello"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Cuello (cargue)"
+        android:textColor="@color/color_texto_activo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTapa" />
+
+    <TextView
+        android:id="@+id/textViewCono"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Cono"
+        android:textColor="@color/color_texto_activo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCuello" />
+
+    <TextView
+        android:id="@+id/textViewCilindro"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/color_texto_activo"
+        android:text="Cilindro"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCono" />
+
+    <TextView
+        android:id="@+id/textViewEscalones"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/color_texto_activo"
+        android:text="Escalones"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCilindro" />
+
+    <TextView
+        android:id="@+id/textViewCañuela"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/color_texto_activo"
+        android:text="Cañuela"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscalones" />
+
+    <TextView
+        android:id="@+id/textViewCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/color_texto_activo"
+        android:text="Camara caída"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCañuela"
+        android:layout_marginLeft="24dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="648dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="24dp"
+        android:scrollbarStyle="insideInset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="270dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/elementos_row_titulos">
+
+                <TextView
+                    android:id="@+id/textView_tiene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Tiene"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:text="Estado"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:text="Tipo material"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_especificos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_span="4"
+                    android:gravity="center"
+                    android:text="Especificos"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView_observaciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:text="Observaciones"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/elementos_row_tapa" >
+
+
+                <Spinner
+                    android:id="@+id/spinner_tiene_tapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinner_estado_tapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_material_tapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textview_celda1_tapa"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textview_celda2_tapa"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_celda3_tapa"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_celda4_tapa"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+                <EditText
+                    android:id="@+id/edittext_observaciones_tapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="24dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/elementos_row_cuello">
+
+
+                <Spinner
+                    android:id="@+id/spinner_tiene_cuello"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_estado_cuello"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView_material_cuello"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_celdas_vacias"/>
+
+                <TextView
+                    android:id="@+id/textview_celda1_cuello"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textview_celda2_cuello"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_celda3_cuello"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_celda4_cuello"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+                <EditText
+                    android:id="@+id/edittext_observaciones_cuello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="24dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/elementos_row_cono">
+
+
+                <Spinner
+                    android:id="@+id/spinner_tiene_cono"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_estado_cono"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView_material_cono"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_celdas_vacias"/>
+
+                <TextView
+                    android:id="@+id/textview_diam_cono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Diam(m)"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_celda2_cono"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_celda3_cono"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_celda4_cono"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+
+                <EditText
+                    android:id="@+id/edittext_observaciones_cono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="24dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/elementos_row_cilindro">
+
+
+                <Spinner
+                    android:id="@+id/spinner_tiene_cilindro"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_estado_cilindro"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_material_cilindro"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/edittext_diam_cilindro"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_cantidad_cilindro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Cantidad"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_celda3_cilindro"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_celda4_cilindro"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+
+                <EditText
+                    android:id="@+id/edittext_observaciones_cilindro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="24dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/elementos_row_escalones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Spinner
+                    android:id="@+id/spinner_tiene_escalones"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_estado_escalones"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_material_escalones"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textview_celda1_escalones"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <EditText
+                    android:id="@+id/edittext_cantidad_escalones"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_celda3_escalones"
+                    android:layout_width="80dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+                <TextView
+                    android:id="@+id/textview_ancho_escalones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Ancho(m)"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittext_observaciones_escalones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="24dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/elementos_row_cañuela">
+
+
+                <Spinner
+                    android:id="@+id/spinner_tiene_cañuela"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_estado_cañuela"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textview_tipomaterial_cañuela"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textview_oido_cañuela"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:text="D Oido(mm)"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_altura_cañuela"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Altura(m)"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_tramo_cañuela"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Tramo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edittext_ancho_cañuela"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <EditText
+                    android:id="@+id/edittext_observaciones_cañuela"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="24dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/elementos_row_camara">
+
+
+                <Spinner
+                    android:id="@+id/spinner_tiene_camara"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textview_estado_camara"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textview_tipomaterial_camara"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/edittext_oido_camara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <EditText
+                    android:id="@+id/edittext_altura_camara"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text|numberDecimal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <EditText
+                    android:id="@+id/edittext_tramo_camara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="14dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textview_celda4_camara"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_celdas_vacias"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+
+                <EditText
+                    android:id="@+id/edittext_observaciones_camara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="14dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

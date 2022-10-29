@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.user.mhinvest.Main2Activity">
+    <item
+        android:id="@+id/action_convertir"
+        android:orderInCategory="100"
+        android:title="Exportar a Excel con imagenes"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_convertirSinimagenes"
+        android:orderInCategory="101"
+        android:title="Exportar a Excel sin imagenes"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_borrardatos"
+        android:orderInCategory="101"
+        android:title="Borrar registro"
+        app:showAsAction="never" />
+</menu>

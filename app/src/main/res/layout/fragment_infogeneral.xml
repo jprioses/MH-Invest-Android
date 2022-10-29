@@ -1,0 +1,498 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mhinvest.Fragments.InfogeneralFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideOverlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/textViewTipoCota"
+            app:layout_constraintTop_toTopOf="@+id/textViewTipoCota">
+
+            <TextView
+                android:id="@+id/textViewFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Fecha"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewDirecc"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Dirección"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFecha"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewBarrio"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Barrio"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDirecc"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewMH"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="MH"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBarrio"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewIPID"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="IPID"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMH"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewSePudoAbriri"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Se pudo abrir?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewIPID"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewTipoCota"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Tipo cota"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSePudoAbriri"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewCota"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="108dp"
+                android:text="Cota tapa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSePudoAbriri"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewTipoalcan"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Tipo alcantarillado"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCota"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewTipoPozo"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Tipo pozo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTipoalcan"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewExcen"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Excentricidad"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTipoPozo"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewGeolo"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="72dp"
+                android:text="Geolocalización"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewExcen"
+                android:layout_marginLeft="24dp" />
+
+            <EditText
+                android:id="@+id/editText_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="24dp"
+                android:ems="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="date"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/textViewFecha"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="220dp" />
+
+            <EditText
+                android:id="@+id/editText_direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="24dp"
+                android:ems="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/textViewDirecc"
+                app:layout_constraintTop_toBottomOf="@+id/editText_fecha"
+                android:layout_marginLeft="170dp" />
+
+            <EditText
+                android:id="@+id/editText_barrio"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="24dp"
+                android:ems="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/textViewBarrio"
+                app:layout_constraintTop_toBottomOf="@+id/editText_direccion"
+                android:layout_marginLeft="220dp" />
+
+            <EditText
+                android:id="@+id/editText_MH"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="256dp"
+                android:layout_marginTop="24dp"
+                android:ems="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/textViewMH"
+                app:layout_constraintTop_toBottomOf="@+id/editText_barrio"
+                android:layout_marginLeft="256dp" />
+
+            <EditText
+                android:id="@+id/editText_IPID"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="244dp"
+                android:layout_marginTop="24dp"
+                android:ems="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/textViewIPID"
+                app:layout_constraintTop_toBottomOf="@+id/editText_MH"
+                android:layout_marginLeft="244dp" />
+
+            <Spinner
+                android:id="@+id/spinner_sepudoabrir"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="24dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/textViewSePudoAbriri"
+                app:layout_constraintTop_toBottomOf="@+id/editText_IPID"
+                android:layout_marginLeft="92dp" />
+
+            <Spinner
+                android:id="@+id/spinner_tipocota"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewTipoCota"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_sepudoabrir"
+                android:layout_marginLeft="168dp" />
+
+            <EditText
+                android:id="@+id/editText_cotatapa"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="108dp"
+                android:ems="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewCota"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_sepudoabrir"
+                android:layout_marginLeft="160dp" />
+
+            <Spinner
+                android:id="@+id/spinner_tipoalcantarillado"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewTipoalcan"
+                app:layout_constraintTop_toBottomOf="@+id/editText_cotatapa"
+                android:layout_marginLeft="28dp" />
+
+            <Spinner
+                android:id="@+id/spinner_tipopozo"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewTipoPozo"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_tipoalcantarillado"
+                android:layout_marginLeft="160dp" />
+
+            <Spinner
+                android:id="@+id/spinner_excen"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewExcen"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_tipopozo"
+                android:layout_marginLeft="40dp" />
+
+            <EditText
+                android:id="@+id/editText_medexcen"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:ems="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spinner_excen"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_tipopozo"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/editText_longitud"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:hint="Longitud"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:textSize="30sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewGeolo"
+                app:layout_constraintTop_toBottomOf="@+id/editText_latitud"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/editText_latitud"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:hint="Latitud"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:textSize="30sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewGeolo"
+                app:layout_constraintTop_toBottomOf="@+id/editText_medexcen"
+                android:layout_marginLeft="24dp" />
+
+            <Button
+                android:id="@+id/button_georef"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="244dp"
+                android:layout_marginTop="72dp"
+                android:background="@mipmap/ic_location_icon"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewGeolo"
+                app:layout_constraintTop_toBottomOf="@+id/editText_medexcen"
+                android:layout_marginLeft="244dp" />
+
+            <TextView
+                android:id="@+id/textViewAltura"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="72dp"
+                android:text="Altura vertical Tapa-fondo (m)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewGeolo"
+                android:layout_marginLeft="24dp" />
+
+            <EditText
+                android:id="@+id/editText_Altura"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="87dp"
+                android:ems="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewAltura"
+                app:layout_constraintTop_toBottomOf="@+id/textViewGeolo"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewMotivoabrir"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Motivo de no poder abrir?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSePudoAbriri"
+                android:layout_marginLeft="24dp" />
+
+            <EditText
+                android:id="@+id/editText_Motivo"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="39dp"
+                android:ems="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewMotivoabrir"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_sepudoabrir"
+                android:layout_marginLeft="24dp" />
+
+            <TextView
+                android:id="@+id/textViewSumideros"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAltura"
+                android:layout_marginLeft="24dp"
+                android:text="Tiene sumideros"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+            <Spinner
+                android:id="@+id/spinner_sumideros"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textViewSumideros"
+                app:layout_constraintTop_toBottomOf="@+id/editText_Altura"
+                android:layout_marginLeft="160dp" />
+
+            <EditText
+                android:id="@+id/editText_sumideros"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spinner_sumideros"
+                app:layout_constraintTop_toBottomOf="@+id/editText_Altura"
+                android:layout_marginLeft="24dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>
