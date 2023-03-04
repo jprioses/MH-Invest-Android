@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Se recomienda usar solamente en tablets para que el treabajo y funcionamiento se optimo. 
+Se recomienda usar solamente en tablets para que el trabajo y funcionamiento sea optimo. 
 
 Esta aplicación fue diseñada y programada en Android Studio con Java, fue hecha para una empresa de topografía y su función es colectar información de cámaras de inspección de alcantarillado. 
 
